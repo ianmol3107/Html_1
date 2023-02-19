@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    height: 22%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#logo{
+    margin: 20px 30px;
+}
+
+#logo img{
+    margin: 3px 5px;
+    height: 100px;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    font-size: 25px;
+    color: maroon;
+    padding: 3px 22px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: blue;
+    background-color: white;
+}
+
+/* HOME SECTION */
+#home{
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home h1{
+    color: orangered;
+    text-align: center;  
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem; 
+}
+
+#home::before{
+    content: "";
+    background: url('homebg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.8rem;
+    border-radius: 10pc;
+    cursor: pointer;
+}
+
